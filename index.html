@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main center">
+        <div class="box center">
+            <img src="profile.jpg" alt="">
+            <div>
+                <p class="user_name">Fahad Hossain</p>
+                <p class="skill">Teacher,FT PCMB Biology </p>
+            </div>
+            <div class="arr_container center ">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <p>Skills</p>
+                <div class="skills">
+                    <div><a href="https://sajid-kabir.github.io/pcmbbiology/Class.html">Class</a></div>
+                    <div><a href="https://sajid-kabir.github.io/pcmbbiology/Exam.html">Exams</a></div>
+                    <div><a href="https://www.ft.education/course/hsc26cycle01biology">Details</a></div>
+                    <div><a href="https://drive.google.com/file/d/1tcqwvCLWNVkH_BqFL-HaY24p_Q_4rJDC/view?fbclid=IwZXh0bgNhZW0CMTEAAR0httOiD3KIokF1g5mdrqFnMe5Tjn3NhJwUhYYwyXw237OkQwA3e8KDgMU_aem_LWEeQpWv_v73KmlDUMy6Wg">Class PDF</a></div>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clc = document.querySelector(".cancel");
+        const arr = document.querySelector(".arr_container");
+        const left_container = document.querySelector(".left_container");
+
+        arr.addEventListener("click", ()=>{
+            arr.classList.add("active_arr");
+            if(left_container.classList.contains("off")){
+                left_container.classList.remove("off");
+                left_container.classList.add("active");
+            }
+        });
+        clc.addEventListener("click", ()=>{
+            arr.classList.remove("active_arr");
+            if(left_container.classList.contains("active")){
+                left_container.classList.remove("active");
+                left_container.classList.add("off");
+            }
+        });
+    </script>
+</body>
+</html>
