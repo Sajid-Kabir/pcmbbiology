@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css"    href="css/style.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>ALL Classes</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Lectures  <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Topic </th><span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Class Link<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Class Status <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="images/profile.jpg" alt="">Fahad Hossain</td>
+                        <td>কোষ রাসায়ন </td>
+                        <td> 3/6/24 </td>
+                        <td>
+                            <p class="status delivered"><a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/380190197824918/">Watch</a></td></p>
+                        </td>
+                        <td> <strong> Live </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/profile.png" alt=""> Fahad Hossain</td>
+                        <td> কার্বোহাইড্রেঢট</td>
+                        <td> 5/6/24 </td>
+                        <td>
+                            <p class="status cancelled"><a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/381221507721787/">Watch</a></p>
+                        </td>
+                        <td> <strong>Live</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/profole.jpg" alt=""> Fahad Hossain </td>
+                        <td> কার্বোহাইড্রেট বাকি অংশ </td>
+                        <td> 10/6/24 </td>
+                        <td>
+                            <p class="status shipped"> <a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/383877430789528/">Watch</a></p>
+                        </td>
+                        <td> <strong>Live</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4(EX)</td>
+                        <td><img src="images/profile.jpg" alt=""> Fahad Hossain</td>
+                        <td> প্রোটিন ও অ্যামাইনো এসিড (Extra)</td>
+                        <td> 12/6/24</td>
+                        <td>
+                            <p class="status delivered"> <a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/384907537353184/">Watch</a></p>
+                        </td>
+                        <td> <strong>Recorded</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/profile.jpg" alt=""> Fahad Hossain </td>
+                        <td> প্রোটিন ও অ্যামাইনো এসিড </td>
+                        <td>  24/6/24</td>
+                        <td>
+                            <p class="status pending"><a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/391334340043837/">Watch</a></p>
+                        </td>
+                        <td> <strong>Live</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/profile.jpg" alt=""> Fahad Hossain</td>
+                        <td> লিপিড ও এনজাইম  </td>
+                        <td> 26/6/24 </td>
+                        <td>
+                            <p class="status cancelled"> <a href="https://www.facebook.com/groups/ftcycle01biology26/permalink/392428066601131/">Watch</a></p>
+                        </td>
+                        <td> <strong>Live</strong> </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
